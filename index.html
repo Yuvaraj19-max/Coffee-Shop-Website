@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee House | Fresh Coffee & Online Orders</title>
+    <link rel="stylesheet" href="./style.css">
+    <meta name="description" content="Coffee House - freshly roasted coffee, simple online ordering and table reservations.">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./images/logo-removebg-preview.png" alt="coffee logo" height="150px" width="150px">
+                <h2>Coffee House</h2> 
+            </div>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#menu">Order</a></li>
+                </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <div class="left">
+             <h2> ☕Fresh Coffee in Every Cup</h2>
+            <p>Start your day with our freshly brewed coffee.Coffee is a beverage brewed from roasted ground coffee beans, known for its stimulating effects due to its caffeine content. It has a rich history, originating from the Arabian Peninsula and becoming a global commodity. Coffee is produced through a complex process involving the coffee plant, which produces seeds called coffee cherries. We serve freshly roasted coffee...</p>
+            <button ><a href="#menu">Order Now</a></button>
+            <button> <a href="#menu">View menu</a></button>
+        </div>
+        <div class="right"> 
+            <img src="./images/coffee-1.avif" alt="pic 1" >
+        </div>   
+        </section>
+        <section id="about">
+            <div id="left-side">
+                <h2>About our Coffee Shop</h2>
+            <img src="./images/coffee pic 2.webp" alt="coffee pic">
+            </div>
+            <div id="right-side">
+                <h3>About our Coffee Shop</h3>
+                <p>Start your day with the aroma of freshly brewed coffee. Our shop is dedicated to serving premium quality beans, roasted to perfection, ensuring every cup is rich, smooth, and full of flavor. Coffee isn’t just a drink—it’s a tradition that began centuries ago in the Arabian Peninsula and has since become a global passion.</p>
+                <ul>
+                    <li> ✔ Premium Beans</li>
+                    <li> ✔ Organic Coffee</li>
+                    <li> ✔ Fresh Milk</li>
+                    <li>✔ Friendly Staff</li>
+                </ul>
+            </div>
+        </section> 
+        <section id="menu">
+            <h2 class="head">Our menu</h2>
+            <div class="menu-tools">
+                <button class="filter-btn active-filter" data-category="all">All</button>
+                <button class="filter-btn" data-category="coffee">Coffee</button>
+                <button class="filter-btn" data-category="special">Special</button>
+                <input id="menu-search" type="search" placeholder="Search coffee..." aria-label="Search menu">
+                <span id="cart-summary">Cart: 0 items</span>
+            </div>
+            <div id="memu-container">
+                <div class="memu-card">
+                    <img src="./images/Espresso.png" alt="ecpresso" height="400px" width="400px">
+                    <h3 style="color: white;"> Espresso </h3>
+                    <p style="color:antiquewhite;">Strong and rich</p>
+                    <p class="price">₹120</p>
+                    <button>Order now</button>
+                </div>
+                <div class="memu-card">
+                    <img src="./images/Cappuccino.png" alt="cappuuu" height="400px" width="400px">
+                    <h3  style="color: white;">Cappuccino </h3>
+                    <p style="color:antiquewhite;">Creamy and Smooth</p>
+                    <p class="price">₹180</p>
+                    <button>Order now</button>
+                </div>
+                 <div class="memu-card">
+                    <img src="./images/Latte1.webp" alt="latte" height="400px" width="400px">
+                    <h3  style="color: white;"> Latte  </h3>
+                    <p style="color:antiquewhite;">Milk and Coffee</p>
+                    <p class="price">₹200</p>
+                    <button>Order now</button>
+                </div>
+            </div>
+        </section>       
+        <section id="features">
+            <h2>OUR SPECIAL COFFEE</h2>
+            <div  class="card">
+                <img src="./images/coffee pre.webp" alt="spl-coffee">
+                <h3>Premium Cappuccino</h3>
+                <p>Made with freshly roasted Arabica beans,steamed milk, and rich creamy foam.Perfect for coffee lovers.</p>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p class="price">₹299</p>
+                <button>Order Now</button>
+            </div>
+        </section>
+        <section id="reviews">
+            <h2>What Our Customers Say</h2>
+            <div id="customer-container"> 
+            <div class="customer">
+                <img src="./images/customer-1.png" alt="Customer pic">
+                <h3>Rahul Sharma </h3>
+                <p>⭐⭐⭐⭐⭐  </p>
+                <p> "Best coffee!"</p>
+            </div>
+             <div class="customer">
+                <img src="./images/customer-2png.png" alt="Customer pic">
+                <h3>Priya Reddy</h3>
+                <p>⭐⭐⭐⭐⭐  </p>
+                <p> "Loved it!"</p>
+            </div>
+             <div class="customer">
+                <img src="./images/customer-3.png" alt="Customer pic">
+                <h3>Arjun Kumar </h3>
+                <p>⭐⭐⭐⭐⭐  </p>
+                <p> "Amazing taste!"</p>
+            </div>
+            </div>
+        </section>
+        <section id="order-cart" aria-live="polite">
+            <h2>YOUR ORDER</h2>
+            <div id="cart-items"></div>
+            <div id="cart-total">Total: ₹0</div>
+            <button id="clear-cart" type="button">Clear Cart</button>
+        </section>
+        <section id="contact">
+            <h2>CONTACT US</h2>
+            <div class="contact-container">
+                    <div class="left-side">
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name">
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+                    <label for="message">Message:</label>
+                    <textarea id="message"></textarea>
+                    <button type="submit"> Send Message</button>
+                </form>
+            </div>
+            <div class="right-side">
+                <h3> Contact Information</h3>
+                <p>📍 Hyderabad</p>
+                <p>📞 +91 9876543210</p>
+                <p>📧 coffeehouse@gmail.com</p>
+                <p>🕒 8 AM - 10 PM</p>
+            </div>
+            </div>
+        </section>
+        <footer>
+            <h2>Coffee House</h2>
+            <p> Brewing Happiness Since 1999</p>
+            <ul>
+                  <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <p>📧 coffeehouse@gmail.com</p>
+                <p>📞 +91 9876543210</p>
+                <p>📍 Hyderabad</p>
+                <p>© 2026 Coffee House. All Rights Reserved.</p>
+        </footer>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
